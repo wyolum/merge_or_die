@@ -67,7 +67,7 @@ pygame.init()
 
 # Set up the display
 pygame.display.set_caption("Get to the red square!")
-WIDTH = 1000
+WIDTH = 520
 HEIGHT = 700
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 
@@ -183,7 +183,7 @@ while running:
     if player.rect.colliderect(end_rect):
         pygame.draw.rect(screen, (0, 255, 0), player.rect)
         pygame.display.flip()
-        time.sleep(5)
+        time.sleep(2)
         player.x = start_x
         player.y = start_y
         player.speed = 0
@@ -204,7 +204,7 @@ while running:
             pygame.draw.rect(screen, (255, 200, 0), drone.rect)
             pygame.draw.rect(screen, (255, 0, 0), player.rect)
             pygame.display.flip()
-            time.sleep(5)
+            time.sleep(2)
             player.x = start_x
             player.y = start_y
             player.speed = 0
